@@ -1,0 +1,1 @@
+-keep class com.tms3206.webview.** { *; }
