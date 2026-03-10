@@ -29,12 +29,11 @@ jobs:
           $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
       - name: Build APK with Gradle
-        run: |
-          gradle assembleDebug
+        run: gradle assembleDebug
         env:
           ANDROID_HOME: ${{ env.ANDROID_HOME }}
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: TMS3206-APK
           path: app/build/outputs/apk/debug/app-debug.apk
