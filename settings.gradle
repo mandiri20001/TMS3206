@@ -1,2 +1,2 @@
-rootProject.name = "WebViewApp"
+rootProject.name = "TMS3206"
 include ':app'
